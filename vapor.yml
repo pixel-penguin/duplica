@@ -1,0 +1,15 @@
+id: 28777
+name: who-dis
+environments:
+    production:
+        memory: 1024
+        cli-memory: 512
+        runtime: 'php-8.1:al2'
+        build:
+            - 'php artisan event:cache'
+    staging:
+        memory: 1024
+        cli-memory: 512
+        runtime: 'php-8.1:al2'
+        build:
+            - 'php artisan event:cache'
